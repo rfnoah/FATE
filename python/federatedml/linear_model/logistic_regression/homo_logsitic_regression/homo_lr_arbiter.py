@@ -91,7 +91,7 @@ class HomoLRArbiter(HomoLRBase):
 
         LOGGER.info("Finish Training task, total iters: {}".format(self.n_iter_))
 
-    def predict(self, data_instantces=None):
+    def predict(self, data_instances=None):
         LOGGER.info(f'Start predict task')
         current_suffix = ('predict',)
         host_ciphers = self.cipher.paillier_keygen(key_length=self.model_param.encrypt_param.key_length,
